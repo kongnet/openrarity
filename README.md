@@ -61,7 +61,7 @@ let r = tokenScore(metaData2)
 */
 ```
 
-## 算法 Algorithm Step
+## 算法步骤 Algorithm Step
 
 - Generate trait value map without undefined(blank) trait
 - Generate undefined(blank) trait for every token

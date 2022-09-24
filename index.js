@@ -63,6 +63,7 @@ function tokenScore (metaObj, blankTrait = '__undefined') {
       return { v: infoContent(x) / entyropSum, toeknId: i }
     })
     .orderBy(['v'], ['desc'])
+  // same rank solution
   let rankNum = 0
   for (let i = 0; i < r.length; i++) {
     rankNum++
