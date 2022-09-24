@@ -1,0 +1,107 @@
+{
+  "name": "openrarity",
+  "version": "0.5.0",
+  "description": "Openrarity core algorithm JS implementation",
+  "keywords": [
+    "NFT",
+    "openrarity",
+    "js"
+  ],
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "scripts": {
+    "patch": "git add . && git commit -m:pencil2: && npm version patch && npm publish .",
+    "cz": "conventional-changelog -p atom -i CHANGELOG.md -s -r 0 && git add . && git status && git cz",
+    "push": "npm version patch && npm publish . && git push",
+    "jsdoc": "jsdoc ./README.md --configure  ./jsdoc.config.js",
+    "test": "mocha --recursive tests/",
+    "cjs2mjs": "rollup -c rollup.config.js",
+    "cov": "nyc --reporter html --reporter text npm test",
+    "gents": "dts-gen -m meeko -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kongnet/openrarity.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "author": "Kongnet <9601698@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.12",
+    "@babel/eslint-parser": "^7.17.0",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "cz-jt": "^0.1.11",
+    "docdash": "^1.2.0",
+    "eslint": "^8.15.0",
+    "istanbul": "*",
+    "jsdoc": "*",
+    "mocha": "*",
+    "nyc": "*",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0"
+  },
+  "eslintConfig": {
+    "plugins": [],
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "experimentalObjectRestSpread": true,
+        "jsx": true,
+        "modules": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "mocha": true
+    },
+    "globals": {
+      "$": true,
+      "describe": true,
+      "it": true
+    },
+    "rules": {
+      "no-unused-vars": 1,
+      "camelcase": 0,
+      "curly": 2,
+      "brace-style": [
+        2,
+        "1tbs",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "quotes": [
+        1,
+        "single"
+      ],
+      "semi": 0,
+      "no-extra-semi": 1,
+      "space-infix-ops": 1,
+      "no-console": 0,
+      "complexity": [
+        1,
+        10
+      ]
+    },
+    "extends": "eslint:recommended"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-jt"
+    }
+  }
+}

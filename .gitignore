@@ -1,0 +1,13 @@
+node_modules
+coverage
+out
+output
+*.html
+*.log
+*.csv
+test*.*
+package-lock.json
+.scannerwork
+.nyc_output
+.vscode
+mochawesome-report
