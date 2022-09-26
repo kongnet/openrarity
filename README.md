@@ -13,6 +13,8 @@ npm i openrarity
 
 ```js
 npm test
+// normal rank
+// same rank
 ```
 
 ## 测试用例 Test Case
