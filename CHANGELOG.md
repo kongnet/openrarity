@@ -1,3 +1,12 @@
+## [0.5.4](https://github.com/kongnet/openrarity/compare/v0.5.3...v0.5.4) (2022-09-26)
+
+
+### :sparkles:
+
+* 增加rollup mjs支持 ([1ff92bc](https://github.com/kongnet/openrarity/commit/1ff92bc99e15d1d82e561dc4ec39c4c1e1905d36))
+
+
+
 ## [0.5.3](https://github.com/kongnet/openrarity/compare/v0.5.2...v0.5.3) (2022-09-24)
 
 

@@ -2,11 +2,7 @@
   "name": "openrarity",
   "version": "0.5.4",
   "description": "Openrarity core algorithm JS implementation",
-  "keywords": [
-    "NFT",
-    "openrarity",
-    "js"
-  ],
+  "keywords": ["NFT", "NFTs", "openrarity", "js"],
   "main": "index.js",
   "exports": {
     ".": {
@@ -36,6 +32,9 @@
   },
   "author": "Kongnet <9601698@qq.com>",
   "license": "MIT",
+  "dependencies": {
+    "meeko": "*"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.12",
     "@babel/eslint-parser": "^7.17.0",
@@ -84,18 +83,12 @@
           "allowSingleLine": true
         }
       ],
-      "quotes": [
-        1,
-        "single"
-      ],
+      "quotes": [1, "single"],
       "semi": 0,
       "no-extra-semi": 1,
       "space-infix-ops": 1,
       "no-console": 0,
-      "complexity": [
-        1,
-        10
-      ]
+      "complexity": [1, 10]
     },
     "extends": "eslint:recommended"
   },

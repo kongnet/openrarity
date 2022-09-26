@@ -4,6 +4,7 @@
   https://github.com/kongnet/meeko
 */
 const $ = require('meeko')
+const utils = require('./lib/utils')
 
 function tokenScore (metaObj, blankTrait = '__undefined') {
   // Create trait value map without undefined(blank) trait
@@ -47,20 +48,10 @@ function tokenScore (metaObj, blankTrait = '__undefined') {
     )
   })
 
-  // info entyrop bit
-  function entyrop (a) {
-    return a.reduce((m, n) => m - n * Math.log2(n), 0)
-  }
-
-  // info content
-  function infoContent (a) {
-    return a.reduce((m, n) => m - Math.log2(n), 0)
-  }
-
-  let entyropSum = entyrop(traitEntyropList)
+  let entyropSum = utils.entyrop(traitEntyropList)
   let r = traitInfoList
     .map((x, i) => {
-      return { v: infoContent(x) / entyropSum, toeknId: i }
+      return { v: utils.infoContent(x) / entyropSum, toeknId: i }
     })
     .orderBy(['v'], ['desc'])
   // same rank solution
