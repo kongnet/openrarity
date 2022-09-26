@@ -8,5 +8,6 @@ export default {
     file: 'index.mjs',
     format: 'esm'
   },
-  plugins: [commonjs(), json(), builtins()]
+  plugins: [commonjs(), json(), builtins()],
+  external: ['meeko']
 }

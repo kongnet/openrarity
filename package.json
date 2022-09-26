@@ -2,12 +2,7 @@
   "name": "openrarity",
   "version": "0.5.5",
   "description": "Openrarity core algorithm JS implementation",
-  "keywords": [
-    "NFT",
-    "NFTs",
-    "openrarity",
-    "js"
-  ],
+  "keywords": ["NFT", "NFTs", "openrarity", "js"],
   "main": "index.js",
   "exports": {
     ".": {
@@ -88,18 +83,12 @@
           "allowSingleLine": true
         }
       ],
-      "quotes": [
-        1,
-        "single"
-      ],
+      "quotes": [1, "single"],
       "semi": 0,
       "no-extra-semi": 1,
       "space-infix-ops": 1,
       "no-console": 0,
-      "complexity": [
-        1,
-        10
-      ]
+      "complexity": [1, 10]
     },
     "extends": "eslint:recommended"
   },

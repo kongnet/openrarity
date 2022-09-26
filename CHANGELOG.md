@@ -1,3 +1,12 @@
+## [0.5.5](https://github.com/kongnet/openrarity/compare/v0.5.4...v0.5.5) (2022-09-26)
+
+
+### :memo:
+
+* add  coverage ([faece92](https://github.com/kongnet/openrarity/commit/faece925b814d1edd845a4e4d3bcf68c7970683f))
+
+
+
 ## [0.5.4](https://github.com/kongnet/openrarity/compare/v0.5.3...v0.5.4) (2022-09-26)
 
 
