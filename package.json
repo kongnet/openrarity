@@ -2,12 +2,7 @@
   "name": "openrarity",
   "version": "0.5.6",
   "description": "Openrarity core algorithm JS implementation",
-  "keywords": [
-    "NFT",
-    "NFTs",
-    "openrarity",
-    "js"
-  ],
+  "keywords": ["NFT", "NFTs", "openrarity", "js"],
   "main": "index.js",
   "exports": {
     ".": {
@@ -21,6 +16,7 @@
     "push": "npm version patch && npm publish . && git push",
     "jsdoc": "jsdoc ./README.md --configure  ./jsdoc.config.js",
     "test": "mocha --recursive tests/",
+    "benchmark": "node benchmark.js",
     "cjs2mjs": "rollup -c rollup.config.js",
     "cov": "nyc --reporter html --reporter text npm test",
     "gents": "dts-gen -m openrarity -o"
@@ -88,18 +84,12 @@
           "allowSingleLine": true
         }
       ],
-      "quotes": [
-        1,
-        "single"
-      ],
+      "quotes": [1, "single"],
       "semi": 0,
       "no-extra-semi": 1,
       "space-infix-ops": 1,
       "no-console": 0,
-      "complexity": [
-        1,
-        10
-      ]
+      "complexity": [1, 10]
     },
     "extends": "eslint:recommended"
   },

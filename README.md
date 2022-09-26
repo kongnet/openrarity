@@ -17,6 +17,20 @@ npm test
 // same rank
 ```
 
+## 基线测试 Benchmark
+
+```js
+npm run benchmark
+/* gen Collection items: 100,000   Rarity calc time: 651 ms -- Mac M2
+
+  { v: 1.010524265698629, toeknId: 53076, rank: 1 },
+  { v: 1.009992300140172, toeknId: 10548, rank: 2 },
+  '.....',
+  { v: 0.9894947869513546, toeknId: 44396, rank: 100000 }
+*/
+
+```
+
 ## 覆盖率 Coverage
 
 ```js
