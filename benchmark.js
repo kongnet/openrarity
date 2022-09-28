@@ -29,3 +29,5 @@ console.log(
   'ms'
 )
 console.log([...r.slice(0, 2), '.....', r.at(-1)])
+// const fs = require('fs')
+// fs.writeFileSync('test001.json', JSON.stringify(metaData, null, 2))

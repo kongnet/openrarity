@@ -1,3 +1,12 @@
+## [0.5.7](https://github.com/kongnet/openrarity/compare/v0.5.6...v0.5.7) (2022-09-26)
+
+
+### :zap:
+
+* add benchmark.js ([f8719e8](https://github.com/kongnet/openrarity/commit/f8719e8ba4af7cc1f5e944deec02845f58de0149))
+
+
+
 ## [0.5.6](https://github.com/kongnet/openrarity/compare/v0.5.5...v0.5.6) (2022-09-26)
 
 
