@@ -94,5 +94,5 @@ let r = tokenScore(metaData2)
 
 - Generate trait value map without undefined(blank) trait
 - Generate undefined(blank) trait for every token
-- Generate trait value stats include traitEntyrop
+- Generate trait value stats include traitEntropy
 - Generate token trait probability list

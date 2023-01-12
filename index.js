@@ -26,15 +26,15 @@ function tokenScore (metaObj, blankTrait = '__undefined') {
     // use meeko sets except
     traitList.except(Object.keys(x)).forEach(x => traitMap[x].push(blankTrait))
   })
-  // Create trait value stats include traitEntyrop
+  // Create trait value stats include traitEntropy
   let traitMapStat = {}
-  let traitEntyropList = []
+  let traitEntropyList = []
   for (let i in traitMap) {
     // use meeko stats function
     traitMap[i].countAdv().map(x => {
       !traitMapStat[i] && (traitMapStat[i] = {})
       traitMapStat[i][x.k] = x.w
-      traitEntyropList.push(x.w)
+      traitEntropyList.push(x.w)
     })
   }
 
@@ -48,10 +48,10 @@ function tokenScore (metaObj, blankTrait = '__undefined') {
     )
   })
 
-  let entyropSum = utils.entyrop(traitEntyropList)
+  let entropySum = utils.entropy(traitEntropyList)
   let r = traitInfoList
     .map((x, i) => {
-      return { v: utils.infoContent(x) / entyropSum, toeknId: i }
+      return { v: utils.infoContent(x) / entropySum, toeknId: i }
     })
     .orderBy(['v'], ['desc'])
   // same rank solution

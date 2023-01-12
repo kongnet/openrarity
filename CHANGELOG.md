@@ -1,3 +1,8 @@
+## [0.5.8](https://github.com/kongnet/openrarity/compare/v0.5.7...v0.5.8) (2022-09-28)
+
+
+
+
 ## [0.5.7](https://github.com/kongnet/openrarity/compare/v0.5.6...v0.5.7) (2022-09-26)
 
 
